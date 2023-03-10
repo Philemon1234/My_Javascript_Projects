@@ -1,2 +1,2 @@
 # My_Javascript_Projects
-This is a repository for all most of my javascript projects
+This is a repository for most of my javascript projects
