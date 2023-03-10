@@ -3,3 +3,91 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    height: 120vh;
+    background-color: var(--color-dark-white);
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(aqua, navy);
+}
+::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(navy, aqua);
+}
+
+:root{
+    --primary-color: #060651;
+    --primary-light: #7C3AED;
+    --secondary-color: #66CED2;
+    --secondary-light: #C0CDF0;
+    --color-white: #fff;
+    --color-dark-white: #EDEDED;
+    --color-black: #000;
+    --color-gray-dark-text: #4F4F4F;
+    --color-gray-light-text: #777;
+    --color-green: #7CFC56;
+    --color-orage: #F2BB13;
+}
+
+
+/* Utility Classes */
+/* Flex Classes */
+.flex{
+    display: flex;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+/* Margin Top Classes */
+.mt-l{
+    margin-top: 5rem;
+}
+
+.mt-m{
+    margin-top: 3rem;
+}
+
+.mt-s{
+    margin-top: 2rem;
+}
+
+.mt-extra-s{
+    margin-top: 1rem;
+}
+
+/* Margin Bottom Classes */
+.mb-l{
+    margin-bottom: 5rem;
+}
+
+.mb-m{
+    margin-bottom: 3rem;
+}
+
+.mb-s{
+    margin-bottom: 2rem;
+}
+
+.mb-extra-s{
+    margin-bottom: 1rem;
+}
