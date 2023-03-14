@@ -161,8 +161,9 @@ html{
 .banner-content{
     position: absolute;
     top: 35%;
-    left: 10%;
-    width: 50%;
+    left: 5%;
+    width: 0%;
+    transition: 2s;
 }
 
 .banner-content .banner-text{
