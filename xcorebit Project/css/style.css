@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    /* color-scheme: dark light; */
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -161,8 +165,8 @@ html{
 .banner-content{
     position: absolute;
     top: 35%;
-    left: 5%;
-    width: 0%;
+    left: 10%;
+    width: 50%;
     transition: 2s;
 }
 
@@ -183,4 +187,50 @@ html{
 .banner-button:hover{
     background-color: transparent;
     border: 2px solid var(--color-white);
+}
+
+/* Main-section */
+/* logos Swiper */
+.swiper {
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide{
+    width: 10%;
+    margin-right: 5rem;
+}
+
+.swiper-slide img{
+    object-fit: cover;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: .1s all linear;
+}
+
+.swiper-slide img:hover{
+    filter: grayscale(0);
+}
+
+/* Services Section */
+section{
+    padding: 5rem;
+    color: #fff;
+}
+
+.services{
+    position: relative;
+}
+
+.services::after{
+    content: "";
+    background-image: linear-gradient(rgba(27, 27, 27), rgba(27, 27, 27));
+    position: absolute;
+    inset: 0;
+    transform: skewY(-3deg);
+    z-index: -1;
 }
