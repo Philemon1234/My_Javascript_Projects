@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a0fe8dcfd8.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="shortcut icon" type="x-icon" href="./assets/lolo.png">
     <link rel="stylesheet" href="./css/all.css">
@@ -24,8 +26,8 @@
 
             <ul class="nav-links">
                 <li><a href="#" class="home">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#"><button class="nav-button btn">Get Started</button></a></li>
@@ -47,101 +49,213 @@
     </header>
 
     <main>
+        <!-- company-logos-section -->
         <section class="company-logos-section">
             <div class="logos-container">
                 <!-- Slider main container -->
                 <div class="swiper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="./assets/IMSS.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/loop.svg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/syncta.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/kromatic.svg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/promoqui.svg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./assets/schoolhouse.png" alt="">
-                        </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./assets/IMSS.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/loop.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/syncta.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/kromatic.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/promoqui.svg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/schoolhouse.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="services">
-            <div class="wrapper">
-                <div class="wrapper-text-container">
-                    <h1 class="wrapper-text-title">Services</h1>
-                    <p class="wrapper-text-par">
-                        Our development team consists of experienced professionals who hold industry standards in every bit of work that our customers demands from us. Alongside our professional standards, our customers love our working style, that is way more better than our industry.
+        <!-- services -->
+        <section id="services">
+            <div class="service-main-container-wrapper services">
+                <div class="wrapper">
+                    <div class="wrapper-text-container">
+                        <h1 class="wrapper-text-title">Services</h1>
+                        <p class="wrapper-text-par">
+                            Our development team consists of experienced professionals who hold industry standards in
+                            every bit of work that our customers demands from us. Alongside our professional standards,
+                            our customers love our working style, that is way more better than our industry.
+                        </p>
+                    </div>
+
+                    <div class="wrapper-content">
+                        <!-- ---wrapper-content-card-1- -->
+                        <div class="wrapper-content-card">
+                            <div class="wrapper-card-icon">
+                                <i><i class="fa-solid fa-code icon"></i></i>
+                            </div>
+                            <h1 class="wrapper-card-title">Back-end Development</h1>
+                            <p class="wrapper-card-par paragrah-text">
+                                Ruby on Rails, Laravel, Flask / Django, NodeJS, PHP, Drupal and Wordpress
+                            </p>
+                        </div>
+
+                        <!-- ---wrapper-content-card-2- -->
+                        <div class="wrapper-content-card">
+                            <div class="wrapper-card-icon">
+                                <i class='bx bx-dock-right icon'></i>
+                            </div>
+                            <h1 class="wrapper-card-title">Front-end Development</h1>
+                            <p class="wrapper-card-par paragrah-text">
+                                React, VueJS and Angular
+                            </p>
+                        </div>
+
+                        <!-- ---wrapper-content-card-3- -->
+                        <div class="wrapper-content-card">
+                            <div class="wrapper-card-icon">
+                                <i><i class="fa fa-mobile icon"></i></i>
+                            </div>
+                            <h1 class="wrapper-card-title">Mobile App Development</h1>
+                            <p class="wrapper-card-par paragrah-text">
+                                Flutter, React Native, Ionic, Kotlin, Java, Android and iOS Apps
+                            </p>
+                        </div>
+
+                        <!-- ---wrapper-content-card-4- -->
+                        <div class="wrapper-content-card">
+                            <div class="wrapper-card-icon">
+                                <i class='bx bxs-business icon'></i>
+                            </div>
+                            <h1 class="wrapper-card-title">Business Consultation</h1>
+                            <p class="wrapper-card-par paragrah-text">
+                                E-Business Management - Discuss your business idea with us, and get that running on web
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="numbers-container">
+                <div class="numbers-container-row">
+                    <!-- numbers-container-card 1-->
+                    <div class="numbers-container-card">
+                        <div class="numbers-icon">
+                            <i class='bx bx-smile'></i>
+                        </div>
+
+                        <h2 class="number-title">108</h2>
+                        <p class="paragrah-text">Happy Clients</p>
+                    </div>
+
+                    <!-- numbers-container-card 2-->
+                    <div class="numbers-container-card">
+                        <div class="numbers-icon">
+                            <i class='bx bx-book'></i>
+                        </div>
+
+                        <h2 class="number-title">204</h2>
+                        <p class="paragrah-text">Projects</p>
+                    </div>
+
+                    <!-- numbers-container-card 3-->
+                    <div class="numbers-container-card">
+                        <div class="numbers-icon">
+                            <i class='bx bx-support'></i>
+                        </div>
+
+                        <h2 class="number-title">6500</h2>
+                        <p class="paragrah-text">Hours Of Support</p>
+                    </div>
+
+                    <!-- numbers-container-card 4-->
+                    <div class="numbers-container-card">
+                        <div class="numbers-icon">
+                            <i class='bx bx-coffee'></i>
+                        </div>
+
+                        <h2 class="number-title">9000</h2>
+                        <p class="paragrah-text">Cup Of Caffiene</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <div class="service-main-container-wrapper services">
+                <div class="about-title-container container-titles">
+                    <h1 class="about-title-heading section-main-headings">ABOUT US</h1>
+                    <p class="about-title-paragraph wrapper-text-par">We excel at providing best IT Solutions, Business Automation, E-Commerce solutions and for startups SME's & large-size businesses.
                     </p>
                 </div>
-
-                <div class="wrapper-content">
-                    <div class="wrapper-content-card">
+                <div class="wrapper about-wrapper-content">
+                    <!-- ---wrapper-content-card-1- -->
+                    <div class="wrapper-content-card about-wrapper-content-card">
                         <div class="wrapper-card-icon">
-                            <i></i>
+                            <i class='bx bx-bulb icon'></i>
+                        </div>
+                        <div>
+                           <a href="#"> <h1 class="wrapper-card-title">Discovery</h1></a>
+                            <p class="wrapper-card-par paragrah-text">
+                                We start our projects by understanding the scope and requirements. This is accomplished by working closely with you to make sure we are all on the same page
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ---wrapper-content-card-2- -->
+                    <div class="wrapper-content-card about-wrapper-content-card">
+                        <div class="wrapper-card-icon">
+                            <i class="fa-solid fa-list-check icon"></i>
+                        </div>
+                        <div>
+                            <a href="#"><h1 class="wrapper-card-title">Plan</h1></a>
+                            <p class="wrapper-card-par paragrah-text">
+                                We will outline your project and agree on project priorities. Than have a strategic plan in place that aligns with your initial vision and makes your goals achievable.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ---wrapper-content-card-3- -->
+                    <div class="wrapper-content-card about-wrapper-content-card">
+                        <div class="wrapper-card-icon">
+                            <i class="fa-sharp fa-regular fa-gears icon"></i>
+                        </div>
+                        <div>
+                            <a href="#"><h1 class="wrapper-card-title">Execute</h1></a>
+                            <p class="wrapper-card-par paragrah-text">
+                                The final design takes shape and Our creative development team reviews and revises the materials and contact you until all material aligns with your goals. We work tirelessly 24*7 to execute our plan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- ---wrapper-content-card-4- -->
+                    <div class="wrapper-content-card about-wrapper-content-card">
+                        <div class="wrapper-card-icon">
+                            <i class='bx bx-calendar-check icon'></i>
+                        </div>
+                        <div>
+                           <a href="#"> <h1 class="wrapper-card-title">Deliver</h1></a>
+                            <p class="wrapper-card-par paragrah-text">
+                                We value your reputation and want to make sure it is correct. After this, we present your finished custom project and upon approval, your new website will be launched and promoted
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- <section id="services" class="">
-            <div class="wrapper">
-                <h1>Section</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit ut et cupiditate excepturi nulla ea explicabo laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-                laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-            </div>
-        </section> -->
-<!-- 
-        <section id="services" class="services">
-            <div class="wrapper">
-                <h1>Section</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit ut et cupiditate excepturi nulla ea explicabo laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-                laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-            </div>
-        </section> -->
 
-        <!-- <section id="services" class="">
-            <div class="wrapper">
-                <h1>Section</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit ut et cupiditate excepturi nulla ea explicabo laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-                laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
+        <!-- portfolio -->
+        <section id="portfolio">
+            <div class="service-main-container-wrapper">
+                <div class="about-title-container container-titles">
+                    <h1 class="about-title-heading section-main-headings">PORTFOLIO</h1>
+                </div>
             </div>
-        </section> -->
-<!-- 
-        <section id="services" class="services">
-            <div class="wrapper">
-                <h1>Section</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit ut et cupiditate excepturi nulla ea explicabo laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-                laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-            </div>
-        </section> -->
-
-        <!-- <section id="services" class="">
-            <div class="wrapper">
-                <h1>Section</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit ut et cupiditate excepturi nulla ea explicabo laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-                laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-            </div>
-        </section> -->
-
-        <!-- <section id="services" class="section">
-            <div class="wrapper">
-                <h1>Section</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae impedit ut et cupiditate excepturi nulla ea explicabo laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-                laudantium ducimus tempore! Aperiam repudiandae, quo quas minus facere dolore debitis magnam saepe minima, dicta odit vitae possimus eius officiis culpa nisi. Dignissimos exercitationem esse laborum hic obcaecati fugiat quidem? Laudantium, repellendus eligendi.
-            </div>
-        </section> -->
-
-
+        </section>
 
     </main>
 

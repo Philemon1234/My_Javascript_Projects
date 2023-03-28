@@ -4,12 +4,19 @@
     box-sizing: border-box;
 }
 
-html{
-    /* color-scheme: dark light; */
-}
-
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+
+html{
+    font-size: 62.5%;
+    color-scheme: dark light;
+    scroll-behavior: smooth;
+}
+
+section{
+    margin-bottom: 10rem;
 }
 
 li{
@@ -18,10 +25,6 @@ li{
 
 a{
     text-decoration: none;
-}
-
-html{
-    font-size: 62.5%;
 }
 
 ::-webkit-scrollbar{
@@ -120,19 +123,19 @@ html{
 }
 
 .nav-links li .home{
-    color: #D3393B;
+    color: var(--primary-color);
 }
 
 .nav-links li a{
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-black);
-    transition: .5s all;
+    transition: .3s all;
     color: var(--secondary-color);
 }
 
 .nav-links li a:hover{
-    color: #D3393B;
+    color: var(--primary-color);
 }
 
 .btn{
@@ -217,13 +220,11 @@ html{
 }
 
 /* Services Section */
-section{
-    padding: 5rem;
-    color: #fff;
-}
-
 .services{
+    padding: 5rem;
+    color: var(--color-white);
     position: relative;
+    margin: 13rem 0 10rem 0;
 }
 
 .services::after{
@@ -234,3 +235,156 @@ section{
     transform: skewY(-3deg);
     z-index: -1;
 }
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 0 auto;
+    place-items: center;
+}
+
+.wrapper-text-container{
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+.wrapper-text-container h1{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.wrapper-text-par{
+    font-size: 1.7rem;
+    line-height: 1.4;
+}
+
+.wrapper-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 100%;
+}
+
+.wrapper-card-icon .icon{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.wrapper-card-title{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.paragrah-text{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    color: var(--color-gray-light-text);
+}
+
+.numbers-container-row{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.numbers-container-card{
+    background-color: var(--color-white);
+    padding: 3rem;
+    padding-top: 4rem;
+    text-align: center;
+    position: relative;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    margin-bottom: 3rem;
+}
+
+.number-title{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.numbers-icon i{
+    position: absolute;
+    top: -2rem;
+    font-size: 2.5rem;
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 50%;
+    left: 44%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+    color: var(--primary-color);
+}
+
+/* About Section */
+.about-wrapper-content{
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.about-title-container{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 6rem;
+}
+
+.section-main-headings{
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+}
+
+.section-main-headings::after{
+    content: "";
+    background-color: var(--primary-color);
+    height: .3rem;
+    width: 40%;
+    bottom: -2rem;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    display: block;
+}
+
+.about-wrapper-content-card{
+    background-color: rgba(34, 34, 34);
+    width: 100%!important;
+    display: flex;
+    padding: 3rem;
+    color: var(--color-white);
+    border-radius: 1rem;
+}
+
+.about-wrapper-content-card .icon{
+    font-size: 3.5rem;
+}
+
+.about-wrapper-content-card a h1{
+    color: var(--color-white);
+}
+
+.about-wrapper-content-card a h1:hover{
+    text-decoration: underline;
+}
+
+.about-wrapper-content-card .wrapper-card-par{
+    color: var(--color-white);
+}
+
+/* Portfolio */
+/* .portfolio-title-heading{
+
+} */
