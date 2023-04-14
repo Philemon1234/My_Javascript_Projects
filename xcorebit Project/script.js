@@ -24,3 +24,26 @@
 //         el: '.swiper-scrollbar',
 //     },
 // });
+
+
+
+
+let navContainer = document.querySelector(".nav-links");
+let openToggleBtn = document.querySelector(".menu-icon");
+let closeToggleBtn = document.querySelector(".close-icon");
+let navLinkAnchor = document.querySelectorAll(".nav-link-anchor");
+
+openToggleBtn.addEventListener("click", function(){
+    navContainer.classList.add("show");
+});
+
+closeToggleBtn.addEventListener("click", function(){
+    navContainer.classList.remove("show");
+});
+
+
+for(let i = 0; i < navLinkAnchor.length; i++){
+    navLinkAnchor.addEventListener("click", function(){
+        navContainer.classList.remove("show");
+    });
+}

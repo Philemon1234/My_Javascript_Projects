@@ -25,14 +25,16 @@
             </div>
 
             <ul class="nav-links">
-                <li><a href="#" class="home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-link-anchor"><a href="#" class="home">Home</a></li>
+                <li class="nav-link-anchor"><a href="#services">Services</a></li>
+                <li class="nav-link-anchor"><a class="nav-link-anchor" href="#about">About</a></li>
+                <li class="nav-link-anchor"><a class="nav-link-anchor" href="#portfolio">Portfolio</a></li>
+                <li class="nav-link-anchor"><a class="nav-link-anchor" href="#contact">Contact</a></li>
                 <li><a href="#"><button class="nav-button btn">Get Started</button></a></li>
+                <i class='fa fa-times close-icon nav-icon'></i>
             </ul>
 
+            <i class='bx bx-menu menu-icon nav-icon'></i>
         </nav>
 
         <!-- Banner -->
@@ -212,7 +214,7 @@
                     <!-- ---wrapper-content-card-2- -->
                     <div class="wrapper-content-card about-wrapper-content-card">
                         <div class="wrapper-card-icon">
-                            <i class='bx bx-list-check icon' ></i>
+                            <i class='bx bx-list-check icon'></i>
                         </div>
                         <div>
                             <a href="#">
@@ -335,7 +337,10 @@
                 <div class="vision-title-container container-titles">
                     <h1 class="about-title-heading section-main-headings">Vision</h1>
                     <p class="vision-title-paragraph wrapper-text-par">
-                        Our Vision is to exceed clients' expectations by going above and beyond to provide the best web solutions that transform data into knowledge, enabling them to solve their problems. We know that customer growth is our growth, so we commit our customers to help in achieving their business goals. We believe in working with transparency, accuracy, and best quality.
+                        Our Vision is to exceed clients' expectations by going above and beyond to provide the best web
+                        solutions that transform data into knowledge, enabling them to solve their problems. We know
+                        that customer growth is our growth, so we commit our customers to help in achieving their
+                        business goals. We believe in working with transparency, accuracy, and best quality.
                     </p>
                 </div>
             </div>
@@ -397,7 +402,7 @@
                         </div>
                         <h5 class="form-box-title mb-s">Call Us</h5>
                         <p class="form-box-paragraph">+92 311 4100 742</p>
-                            <p class="form-box-paragraph">+92 321 8814 341</p>
+                        <p class="form-box-paragraph">+92 321 8814 341</p>
                     </div>
                 </div>
             </div>
@@ -407,7 +412,61 @@
     </main>
 
     <footer>
+        <div class="sub-footer flex justify-space-between">
+            <!-- footer-child 1-->
+            <div class="footer-child-1 flex">
+                <div class="footer-col-1">
+                    <h1 class="footer-col-1-title mb-extra-s">Xcorebit<span class="dot">.</span> </h1>
+                    <p class="footer_pars mb-extra-s">Daftarkhwan Downtown,</p>
+                    <p class="footer_pars mb-extra-s">H 21, Mateen Fatima Rd Block,</p>
+                    <p class="footer_pars mb-extra-s">Gulberg Lahore, Pakistan</p>
+                    <p class="footer_pars mb-m">Lahore</p>
 
+                    <div>
+                        <h6 class="footer-contact mb-extra-s">Phone: <span>+92 321 8814 341</span></h6>
+                        <h6 class="footer-contact mb-extra-s">Phone: <span>+92 331 4587 577</span></h6>
+                        <h6 class="footer-contact">Email: <span> info@xcorebit.com</span></h6>
+                        <span class="footer-contact copy_right">© Copyright 2023 <strong>Xcorebit.</strong> All rights
+                            Reserved </span>
+                    </div>
+                </div>
+
+                <div class="footer-links-col">
+                    <h3 class="footer-links-title mb-s">Useful Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- footer-child 2 -->
+            <div class="footer-child-2 flex">
+                <div class="footer-links-col">
+                    <h3 class="footer-links-title mb-s">Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Back-end Development</a></li>
+                        <li><a href="#">Front-end Development</a></li>
+                        <li><a href="#">Mobile App Development</a></li>
+                        <li><a href="#">Business Consultaion</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30537.39019793874!2d74.33705442020685!3d31.531979950310564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdaftarkhwan%20!5e0!3m2!1sen!2sug!4v1681469897576!5m2!1sen!2sug"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                    <div class="footer-social-icons mt-m">
+                        <a href=""><i class='bx bxl-facebook'></i></a>
+                        <a href=""><i class='bx bxl-skype'></i></a>
+                        <a href=""><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>

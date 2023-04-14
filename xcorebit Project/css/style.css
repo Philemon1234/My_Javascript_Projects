@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Raleway:wght@200&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -322,7 +325,7 @@ a{
     background-color: var(--color-white);
     padding: 1.5rem;
     border-radius: 50%;
-    left: 44%;
+    left: 42%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
     color: var(--primary-color);
 }
@@ -509,7 +512,7 @@ a{
 
 .form-box-title{
     font-size: 2rem;
-    color: #ccc;
+    color: rgba(0, 0, 0, .5);
 }
 
 .form-box-paragraph{
@@ -574,3 +577,209 @@ footer{
     background-color: var(--secondary-color);
 }
 
+.sub-footer{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-col-1{
+    margin-right: 8rem;
+}
+
+.footer-col-1-title{
+    font-size: 2.5rem;
+}
+
+.footer-col-1-title .dot{
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.footer_pars{
+    font-size: 1.5rem;
+}
+
+.footer-contact{
+    font-size: 1.5rem;
+}
+
+.footer-contact span{
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-links-title{
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.footer-links-title::after {
+    content: "";
+    background-color: var(--primary-color);
+    height: 0.2rem;
+    width: 20%;
+    bottom: 0;
+    left: 0;
+    top: 2.5rem;
+    margin-bottom: 2rem;
+    position: absolute;
+}
+
+.copy_right{
+    margin-top: 8rem;
+    display: block;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.footer-links-col li a{
+    color: var(--color-white);
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 2rem;
+    transition: .3s all;
+}
+
+.footer-links-col li a:hover{
+    color: var(--color-gray-light-text);
+}
+
+.footer-map{
+    margin-left: 10rem;
+    width: 40rem;
+    height: 30rem;
+    position: relative;
+}
+
+.footer-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.footer-social-icons{
+    position: absolute;
+    right: 0;
+}
+
+.footer-social-icons a{
+    background-color: #2e2b2b;
+    color: var(--color-white);
+    font-size: 2rem;
+    border-radius: .7rem;
+    padding: .7rem;
+    margin-right: .2rem;
+    text-align: center;
+    transition: .3s ease-out;
+}
+
+.footer-social-icons a:hover{
+    background-color: var(--primary-color);
+}
+
+.menu-icon{
+    font-size: 3rem;
+    color: var(--secondary-color);
+    display: none;
+}
+
+.close-icon{
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    font-size: 3rem;
+    display: none;
+}
+
+.show{
+    display: block!important;
+}
+
+
+/* ------Media Queries--------- */
+/* Landscape */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 2rem 2rem;
+    }
+
+    .banner-content .banner-text{
+        font-size: 4rem;
+    }
+    
+}
+
+
+/* Portrait */
+@media (max-width: 900px) {
+    /* NavBar */
+    .nav-links{
+        position: absolute;
+        background-color: rgba(0, 0, 0, .9);
+        top: 0;
+        width: 100%;
+        height: 105vh!important;
+        z-index: 50;
+        padding-left: 5rem;
+        padding-top: 10rem;
+        left: 0;
+        display: none;
+    }
+
+    .nav-links::after{
+        content: "";
+        background-color: #fff;
+        width: 88%;
+        height: 80vh;
+        top: 5rem;
+        left: 1.5rem;
+        padding: 3rem;
+        display: block;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .nav-links li{
+        display: block;
+        margin-bottom: 5rem;
+    }
+
+    .nav-button{
+        display: none;
+    }
+
+    .navbar {
+        padding: 2rem 10rem;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+    
+    .close-icon{
+        display: block;
+    }
+
+
+    /* Banner */
+    .banner-content{
+        left: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner-content .banner-text{
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+
+/* Phone */
+@media (max-width: 600em) {
+    
+}
