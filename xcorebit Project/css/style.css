@@ -205,13 +205,17 @@ a{
     margin-top: 7rem;
     margin-bottom: 4rem;
     width: 100%;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+    place-items: center;
 }
 
 .swiper-slide{
-    width: 10%;
+    width: 50%;
     margin-right: 5rem;
 }
 
@@ -573,7 +577,7 @@ a{
 
 /* footer */
 footer{
-    height: 60vh;
+    /* height: 60vh; */
     background-color: var(--secondary-color);
 }
 
@@ -703,14 +707,27 @@ footer{
 /* ------Media Queries--------- */
 /* Landscape */
 @media (max-width: 1200px) {
+    /* NavBar */
     .navbar {
         padding: 2rem 2rem;
     }
 
+    /* Banner */
     .banner-content .banner-text{
         font-size: 4rem;
     }
-    
+
+    /* Services */
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    /* Contact Us */
+    .form-box-paragraph {
+        font-size: 1.3rem;
+        text-align: center;
+    }
 }
 
 
@@ -748,6 +765,10 @@ footer{
         margin-bottom: 5rem;
     }
 
+    .nav-links li a{
+        font-size: 2.5rem;
+    }
+
     .nav-button{
         display: none;
     }
@@ -774,12 +795,73 @@ footer{
     }
 
     .banner-content .banner-text{
-        font-size: 3rem;
         text-align: center;
     }
+
+    /* Logos Container */
+    .swiper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .swiper-slide{
+        width: 30%;
+    }
+
+    /* About Us */
+    .about-wrapper-content {
+        width: 100%;
+    }
+
+    /* Contact Us */
+    .address-container{
+        grid-column: 1 / 5;
+    }
+    
+    .login-form-container{
+        grid-column: 1 / 5;
+        grid-row: 3 / 5;
+    }
+
+    .form-email-container{
+        grid-column: 1 / 3;
+    }
+
+    .form-call-container{
+        grid-column: 3 / 5;
+    }
+
+    /* Footer */
+    .footer-child-1, .footer-child-2{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
 }
 
 /* Phone */
-@media (max-width: 600em) {
-    
+@media (max-width: 700px) {
+    /* Services */
+    .wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .wrapper-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .wrapper-card-icon{
+        display: none;
+    }
+
+    /* Portfolio */
+    .portfolio-container-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+        margin: 0 auto;
+        gap: 3rem;
+    }
 }
