@@ -1,0 +1,13 @@
+// let name = 42;
+// let greeting = "Hi, my name is ";
+
+// let myGreeting = greeting + name + "!";
+
+// console.log(myGreeting) 
+
+// let name = "Ntivuguruzwa Philemon";
+// let greeting = "Welcome back "
+
+// welcomeEl.innerText = greeting + name;
+
+// welcomeEl.innerText += "👋";

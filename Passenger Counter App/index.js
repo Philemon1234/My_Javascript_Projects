@@ -7,13 +7,37 @@
 
 let count = 0;
 let countEl = document.getElementById("count-el");
+let welcomeEl = document.getElementById("welcome-el");
+let saveEl = document.getElementById("save-el");
+let saveBtn = document.getElementById("save-btn");
 
 function increment() {
-    count = count + 1;
-    countEl.innerText = count;
+    count += 1;
+    countEl.textContent = count;
 }
 
 function save() {
-    console.log(count);
+    let counter = count + " - ";
+    saveEl.textContent += counter;
+    count = 0;
+    countEl.textContent = count;
 }
+
+//Practice
+// let firstName = "Ntivuguruzwa";
+// let lastName = "Philemon";
+
+// let fullName = firstName + " " + lastName;
+
+// console.log(fullName);
+
+
+let name = "Linda";
+let greeting = "Hi, there";
+
+function greet() {
+    console.log(greeting + ", " + name + "!");
+}
+
+greet()
 
