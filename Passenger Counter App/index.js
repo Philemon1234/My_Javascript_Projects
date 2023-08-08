@@ -32,12 +32,41 @@ function save() {
 // console.log(fullName);
 
 
-let name = "Linda";
-let greeting = "Hi, there";
+// let name = "Linda";
+// let greeting = "Hi, there";
 
-function greet() {
-    console.log(greeting + ", " + name + "!");
-}
+// function greet() {
+//     console.log(greeting + ", " + name + "!");
+// }
 
-greet()
+// greet()
 
+
+// Increment & Decrement
+// let myPoints = 3;
+
+// function add3Pionts() {
+//     myPoints += 3;
+// }
+
+// function remove1Point() {
+//     myPoints -= 1;
+// }
+
+
+// add3Pionts();
+// add3Pionts();
+// add3Pionts();
+// remove1Point()
+// remove1Point()
+
+
+// console.log(myPoints);
+
+
+// console.log("2" + 2) // "22"
+// console.log(11 + 7) //  18 
+// console.log(6 + "5") // "65"   
+// console.log("My points: " + 5 + 9) // "My points: 59"
+// console.log(2 + 2) //   4
+// console.log("11" + "14") //  "1114"
