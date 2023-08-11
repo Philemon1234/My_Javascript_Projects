@@ -9,3 +9,9 @@ let featuredPosts = [
 // Create an array that lists your i.e. experience, education, licenses, skills or similar
 // The items of the array should be strings
 
+let experience = [
+    "I've been in coding for two years",
+    "I've taught many students coding",
+    "I have a Free Code Camp certificate"
+];
+

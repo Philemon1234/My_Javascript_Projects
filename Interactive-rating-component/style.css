@@ -1,6 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300&family=Overpass:wght@200;300;400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    background-color: #000000;
+    width: 1440px;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    color: white;
+}
+
+.card{
+    background-color: hsl(216, 12%, 8%);
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    border-radius: 50px;
+}
+
+.star img{
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    border-radius: 50%;
+    width: 70px;
+}
+
+.card h1{
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.card p{
+    color: hsl(217, 9%, 48%);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.round-btns{
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.round-btns span{
+    color: hsl(217, 9%, 48%);
+    background-color:  hsl(213, 19%, 18%);
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding-top: 22px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.round-btns span:hover{
+    background-color:  hsl(212, 15%, 25%);
+}
+
+.btn{
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(214, 192, 192, .8);
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn:hover {
+    background-color: hsl(25, 84%, 43%);
+}
+
+.hide_card {
+    display: none;
+}
+
+#thank_card {
+     position: absolute;
+}
+
+#thank_card h1{
+    margin-top: 30px;
+}
+
+#thank_card h1, p{
+    text-align: center;
+}
+
+.image-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#thank_card h2{
+    font-size: 20px;
+    text-align: center;
+    background-color: hsl(213, 19%, 18%);
+    padding: 7px;
+    width: 60%;
+    border-radius: 30px;
+    margin: 0 auto;
+    color: hsl(25, 97%, 53%);
+}
