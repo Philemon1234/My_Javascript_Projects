@@ -8,7 +8,7 @@ let selectedRate = null;
 for (let i = 0; i < roundBtns.length; i++) {
     roundBtns[i].addEventListener("click", function (event) {
         let clicked = event.target.textContent;
-        console.log(clicked);
+        // console.log(clicked);
 
         selectedRate = clicked;
 
