@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a0fe8dcfd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Windows 11 Login</title>
+</head>
+
+<body>
+
+
+    <div id="parent">
+        <!-- -----------Date and Time--------- -->
+        <div class="time-container">
+            <p id="time">09:56</p>
+            <p id="date">Thursday, August 2023</p>
+        </div>
+
+        <!-- -----------form--------- -->
+        <div id="form-container" class="form-container">
+            <div class="profile-picture">
+                <img src="./Philemon_ profile.png" alt="">
+            </div>
+
+            <h2 class="name">Philemon</h2>
+
+            <div class="inputs">
+                <input type="text" id="input-form" placeholder="Enter password">
+                <i class="fa fa-angle-right" id="submit-btn"></i>
+            </div>
+        </div>
+
+        <div id="incorrect-password-container">
+            <div class="profile-picture">
+                <img src="./Philemon_ profile.png" alt="">
+            </div>
+
+            <h2 class="name">Philemon</h2>
+
+           <button id="try-agin-btn">OK</button>
+        </div>
+
+        <!-- -----------bottom icons--------- -->
+        <div class="icons" onclick="hideTimeContainer()">
+            <i class="fa fa-battery"></i>
+            <i class="fa fa-wifi"></i>
+            <i class="fa fa-power-off"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
