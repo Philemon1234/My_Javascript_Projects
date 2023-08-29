@@ -20,10 +20,12 @@ function hideTimeContainer() {
     timeContainer.style.transition = "2s"
     timeContainer.style.opacity = "0"
 
+    parent.style.backgroundImage = 'url("lock screen wallpaper 2.jpg")'
+    parent.style.transition = ".5s 1s"
+    // parent.style.transition = ".5s 1s"
+
     formContainer.style.opacity = "1";
     formContainer.style.transition = ".3s 1s";
-    // formContainer.style.display = "block";
-
 
     // incorrectPasswordContainer.style.opacity = "0";
     // incorrectPasswordContainer.style.display = "none";
@@ -44,9 +46,15 @@ function getPassword() {
         welcome.style.opacity = "1";
         welcome.style.display = "block";
 
-        input.value = "";
+        parent.style.backgroundImage = 'url("Home screen.png")'
 
-    } else {
+        inputValue = "";
+
+    } else if (inputValue === ""){
+
+        submitBtn.disabled = true;
+
+    } else{
 
         formContainer.style.opacity = "0";
         formContainer.style.display = "none";
