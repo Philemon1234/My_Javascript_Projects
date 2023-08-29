@@ -2,16 +2,13 @@
 // key-value pairs
 
 let course = {
-    title: "Learn CSS Grid for free",
-    lessons: 16,
-    creator: "Per Harald Borgen",
+    title: "Learn css grid",
+    Lessons: 16,
+    creator: "Philemon Ria",
     length: 63,
     level: 2,
     isFree: true,
-    tags: ["html", "css"]
+    tags: ["Html", "css"]
 }
 
-
-console.log( course.tags )
-
-
+console.log(course.title)
