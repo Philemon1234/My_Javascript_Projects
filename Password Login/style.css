@@ -1,7 +1,8 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 #parent {
@@ -24,32 +25,32 @@
     text-align: center;
 }
 
-#time{
+#time {
     font-weight: bolder;
     font-size: 80px;
     user-select: none;
 }
 
-#date{
+#date {
     font-size: 21px;
     font-weight: 500;
     user-select: none;
 }
 
-.icons{
+.icons {
     position: absolute;
     bottom: 40px;
     right: 80px;
 }
 
-.icons i{
+.icons i {
     color: #fff;
     margin-left: 20px;
 }
 
 /* ------form------------- */
 
-.form-container{
+.form-container {
     position: absolute;
     display: inline-block;
     top: 40%;
@@ -60,7 +61,7 @@
     /* transition: .3s 1s; */
 }
 
-#form-container{
+#form-container {
     opacity: 0;
 }
 
@@ -70,7 +71,7 @@
     margin: 0 auto;
 }
 
-.profile-picture img{
+.profile-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -78,37 +79,45 @@
     user-select: none;
 }
 
-.name{
+.name {
     font-size: 21px;
     font-weight: 400;
-    margin: 13px 0;
+    margin: 25px 0;
     user-select: none;
 }
 
-input{
+input {
     padding: 7px;
     border: none;
     outline: none;
     width: 200px;
-    font-size: 16px;
-    color: #555;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(34, 34, 34, .8);
+    border-radius: 5px;
+    position: relative;
+    letter-spacing: 2px;
+    border-bottom: 2px solid rgb(199, 123, 10);
 }
 
-input::placeholder{
-    font-size: 14px;
+input::placeholder {
+    font-size: 13px;
+    letter-spacing: normal;
+    color: #bdb1b1;
 }
 
-#submit-btn{
-    background-color: rgba(47, 48, 58, 0.8);
+#submit-btn {
     padding: 8px 8px;
     border: none;
     outline: none;
     position: absolute;
     cursor: pointer;
+    right: 0;
 }
 
-#incorrectPasswordContainer {
-    position: absolute;
+#incorrect-password-container {
+    position: relative;
     display: inline-block;
     top: 40%;
     left: 50%;
@@ -117,4 +126,140 @@ input::placeholder{
     color: #fff;
     opacity: 0;
     display: none;
+    /* background-color: maroon; */
+    z-index: 22;
+}
+
+#try-again-btn {
+    padding: 7px 35px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#try-again-btn:hover {
+    background-color: rgb(7, 29, 197);
+}
+
+/* ----------------Welcome----------------- */
+
+#welcome{
+    display: block;
+    opacity: 0;
+}
+
+/* ------Loader------ */
+.loader {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+
+.loader .circle {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    opacity: 0;
+    transform: rotate(225deg);
+    animation-iteration-count: infinite;
+    animation-name: orbit;
+    animation-duration: 5.5s;
+}
+
+.loader .circle:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 9px rgba(255, 255, 255, .7);
+}
+
+.loader .circle:nth-child(2) {
+    animation-delay: 240ms;
+}
+
+.loader .circle:nth-child(3) {
+    animation-delay: 480ms;
+}
+
+.loader .circle:nth-child(4) {
+    animation-delay: 720ms;
+}
+
+.loader .circle:nth-child(5) {
+    animation-delay: 960ms;
+}
+
+.loader .bg {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    margin-left: -16px;
+    margin-top: -16px;
+    border-radius: 13px;
+    animation: bgg 16087ms ease-in alternate infinite;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(225deg);
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+
+    7% {
+        transform: rotate(345deg);
+        animation-timing-function: linear;
+    }
+
+    30% {
+        transform: rotate(455deg);
+        animation-timing-function: ease-in-out;
+    }
+
+    39% {
+        transform: rotate(690deg);
+        animation-timing-function: linear;
+    }
+
+    70% {
+        transform: rotate(815deg);
+        opacity: 1;
+        animation-timing-function: ease-out;
+    }
+
+    75% {
+        transform: rotate(945deg);
+        animation-timing-function: ease-out;
+    }
+
+    76% {
+        transform: rotate(945deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(945deg);
+        opacity: 0;
+    }
+}
+
+.welcome-title {
+    position: absolute;
+    bottom: -70px;
+    left: -20px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+    margin: 25px 0;
+    user-select: none;
 }
