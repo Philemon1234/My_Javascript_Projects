@@ -41,6 +41,7 @@
     position: absolute;
     bottom: 40px;
     right: 80px;
+    display: block;
 }
 
 .icons i {
@@ -147,7 +148,7 @@ input::placeholder {
 /* ----------------Welcome----------------- */
 
 #welcome{
-    display: block;
+    display: none;
     opacity: 0;
 }
 

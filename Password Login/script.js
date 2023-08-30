@@ -6,7 +6,7 @@ let formContainer = document.getElementById("form-container")
 let incorrectPasswordContainer = document.getElementById("incorrect-password-container")
 let tryAgainBtn = document.getElementById("try-again-btn")
 let welcome = document.getElementById("welcome")
-// let icons = document.querySelector(".icons")
+let icons = document.querySelector(".icons")
 
 submitBtn.addEventListener("click", function () {
     getPassword()
@@ -17,7 +17,7 @@ parent.addEventListener("click", hideTimeContainer)
 
 function hideTimeContainer() {
     timeContainer.style.top = "-37%"
-    timeContainer.style.transition = "2s"
+    timeContainer.style.transition = "1s"
     timeContainer.style.opacity = "0"
 
     parent.style.backgroundImage = 'url("lock screen wallpaper 2.jpg")'
@@ -27,12 +27,6 @@ function hideTimeContainer() {
     formContainer.style.opacity = "1";
     formContainer.style.transition = ".3s 1s";
 
-    // incorrectPasswordContainer.style.opacity = "0";
-    // incorrectPasswordContainer.style.display = "none";
-
-
-    // parent.style.filter = "blur(5px)";
-    // parent.style.zIndex = - 2
 }
 
 function getPassword() {
@@ -43,27 +37,28 @@ function getPassword() {
         formContainer.style.opacity = "0";
         formContainer.style.display = "none";
 
-        welcome.style.opacity = "1";
-        welcome.style.display = "block";
+        showWelcomeScreen()
 
-        parent.style.backgroundImage = 'url("Home screen.png")'
+        // hideWelcomeScreen()
+
+        // parent.style.backgroundImage = 'url("Home screen.png")'
 
         inputValue = "";
 
-    } else if (inputValue === ""){
+    } else if (inputValue === "") {
 
         submitBtn.disabled = true;
 
-    } else{
+    } else {
 
         formContainer.style.opacity = "0";
         formContainer.style.display = "none";
-
 
         incorrectPasswordContainer.style.opacity = "1";
         incorrectPasswordContainer.style.display = "block";
     }
 }
+
 
 tryAgainBtn.addEventListener("click", function () {
 
@@ -76,3 +71,21 @@ tryAgainBtn.addEventListener("click", function () {
     input.value = "";
 
 })
+
+function showWelcomeScreen() {
+    welcome.style.opacity = "1";
+    welcome.style.display = "block";
+    
+    setTimeout(hideWelcomeScreen, 5000)
+}
+
+
+function hideWelcomeScreen() {
+    welcome.style.opacity = "0";
+    welcome.style.display = "none";
+
+    icons.style.display = "none";
+
+    parent.style.backgroundImage = 'url("Home screen.png")';
+}
+
