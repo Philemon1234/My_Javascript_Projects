@@ -13,7 +13,6 @@ submitBtn.addEventListener("click", function () {
 })
 
 parent.addEventListener("click", hideTimeContainer)
-// icons.addEventListener("click", hideTimeContainer)
 
 function hideTimeContainer() {
     timeContainer.style.top = "-37%"
@@ -22,7 +21,6 @@ function hideTimeContainer() {
 
     parent.style.backgroundImage = 'url("lock screen wallpaper 2.jpg")'
     parent.style.transition = ".5s 1s"
-    // parent.style.transition = ".5s 1s"
 
     formContainer.style.opacity = "1";
     formContainer.style.transition = ".3s 1s";
@@ -39,9 +37,6 @@ function getPassword() {
 
         showWelcomeScreen()
 
-        // hideWelcomeScreen()
-
-        // parent.style.backgroundImage = 'url("Home screen.png")'
 
         inputValue = "";
 
