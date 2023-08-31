@@ -5,12 +5,12 @@ const ulEl = document.getElementById("ul-el")
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
-    console.log(myLeads)
+    console.log(myLeads) 
 })
 
 // Render the leads in the unordered list using ulEl.textContent
 for (let i = 0; i < myLeads.length; i++) {
-    console.log(myLeads[i])
+    ulEl.textContent += myLeads[i] + " "
 }
 
 
