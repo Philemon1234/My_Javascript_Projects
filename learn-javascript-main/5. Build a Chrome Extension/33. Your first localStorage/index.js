@@ -4,8 +4,12 @@ const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 
 // 1. Save a key-value pair in localStorage
+// localStorage.setItem("myName", "Philemon")
 // 2. Refresh the page. Get the value and log it to the console
+let name = localStorage.getItem("myName")
+console.log(name)
 // 3. Clear localStorage
+// localStorage.clear()
 
 // HINTS:
 // localStorage.setItem(key, value)
