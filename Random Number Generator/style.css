@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=EB+Garamond:wght@700&family=Handjet:wght@300&family=Overpass:wght@200;300;400;500&family=Pacifico&family=Rubik:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+}
+
+.container {
+    border: 2px solid #ccc;
+    border-radius: 2rem;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 2rem 2rem 2rem;
+    text-align: center;
+}
+
+.title {
+    color: #b627e2;
+    font-family: 'Black Ops One', cursive;
+    user-select: none;
+}
+
+#number {
+    color: #de950c;
+    font-size: 10rem;
+    user-select: none;
+    font-family: 'Black Ops One', cursive;
+}
+
+#btn {
+    margin-top: 1rem;
+    padding: 1rem 4rem;
+    font-size: 1.1rem;
+    border: 2px solid rgb(255, 0, 208);
+    background-color: rgb(73, 1, 46);
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#btn::before {
+    content: "";
+    background-color: #333;
+    height: 6rem;
+    width: 3rem;
+    display: block;
+    position: absolute;
+    transform: rotate(50deg);
+    top: -3rem;
+    left: -2rem;
+    cursor: initial;
+}
+
+#btn::after {
+    content: "";
+    background-color: #333;
+    height: 6rem;
+    width: 3rem;
+    display: block;
+    position: absolute;
+    transform: rotate(50deg);
+    bottom: -3rem;
+    right: -2rem;
+    cursor: initial;
+}
