@@ -3,9 +3,7 @@ let colorCode = document.getElementById("code")
 const colorBtn = document.getElementById("color-btn")
 
 colorBtn.addEventListener("click", function() {
-    colorCode.style.color = getRandomHexColor()
-    colorBtn.style.color = getRandomHexColor()
-    body.style.backgroundColor = getRandomHexColor()
+    getRandomHexColor()
 })
 
 function getRandomHexColor() {
@@ -17,7 +15,8 @@ function getRandomHexColor() {
 
     const hexColor = `#${randomR.toString(16).padStart(2, '0')}${randomG.toString(16).padStart(2, '0')}${randomB.toString(16).padStart(2, '0')}`
 
-    return hexColor;
+    // colorCode.style.color = hexColor;
+    colorCode.textContent = hexColor;
+    colorBtn.style.color = hexColor;
+    body.style.backgroundColor = hexColor;
 }
-
-// let randomColor = getRandomHexColor();
