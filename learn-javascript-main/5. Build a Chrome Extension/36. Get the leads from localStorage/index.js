@@ -5,7 +5,9 @@ const ulEl = document.getElementById("ul-el")
 
 // Get the leads from the localStorage
 // Store it in a variable, leadsFromLocalStorage
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 // Log out the variable
+console.log(leadsFromLocalStorage)
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
@@ -28,5 +30,5 @@ function renderLeads() {
             </li>
         `
     }
-    ulEl.innerHTML = listItems  
+    ulEl.innerHTML = listItems
 }
