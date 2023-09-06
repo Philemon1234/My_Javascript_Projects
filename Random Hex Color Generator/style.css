@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=EB+Garamond:wght@700&family=Handjet:wght@300&family=Overpass:wght@200;300;400;500&family=Pacifico&family=Rubik:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #800000;
+    height: 100vh;
+    position: relative;
+}
+
+.color-container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.color-text{
+    font-weight: 900;
+    user-select: none;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+}
+
+#code{
+    user-select: none;
+    font-family: 'Black Ops One', cursive;
+}
+
+#color-btn{
+    display: block;
+    margin: 1rem auto;
+    padding: .7rem 2rem;
+    background-color: transparent;
+    border: .2rem solid rgba(255, 255, 255, 0.6);
+    border-radius: 5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    user-select: none;
+}
+
+#color-btn:hover{
+    background-color: rgba(36, 186, 16, 0.6);
+}
