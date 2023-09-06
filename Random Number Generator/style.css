@@ -44,7 +44,7 @@ body{
     color: #fff;
     position: relative;
     cursor: pointer;
-    transition: .2s;
+    transition: .2s;z
 }
 
 #btn::before {
