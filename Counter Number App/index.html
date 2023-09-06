@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Counter Number App</title>
 </head>
+
 <body>
-    
+
     <div class="container">
         <h1 class="title">Counter Number App</h1>
 
-        <button class="btn" id="increment"><i class="fa fa-plus"></i></button>
+        <button class="btn" id="decrement" onclick="decrementNumber()"><i class="fa fa-minus"></i></button>
         <span class="btn" id="number">0</span>
-        <button class="btn" id="decrement"><i class="fa fa-minus"></i></button>
-        <button class="btn" id="reset">Reset</button>
+        <button class="btn" id="increment" onclick="incrementNumber()"><i class="fa fa-plus"></i></button>
+        <button class="btn" id="reset" onclick="resetNumber()">Reset</button>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
