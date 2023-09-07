@@ -7,6 +7,43 @@ let incorrectPasswordContainer = document.getElementById("incorrect-password-con
 let tryAgainBtn = document.getElementById("try-again-btn")
 let welcome = document.getElementById("welcome")
 let icons = document.querySelector(".icons")
+let time = document.getElementById("time")
+let date = document.getElementById("date")
+
+function getCurrentDate(){
+    let currentDate = new Date();
+
+    const hours = currentDate.getHours();
+    const minutes = currentDate.getMinutes();
+    const seconds = currentDate.getSeconds();
+    const meridiem = 'AM'
+
+    if (hours >= 12) {
+        meridiem = 'PM';
+        if (hours > 12) {
+            hours -= 12
+        }
+    }
+
+    time.textContent = hours + ":" + minutes;
+
+
+    const monthNames = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
+
+    // const day = currentDate.getDate();
+    const monthIndex = currentDate.getMonth();
+    const monthName = currentDate.monthNames[monthIndex];
+    // const year = currentDate.getFullYear();
+
+    // date.textContent = day + ", " + month + " " + year
+    date.textContent = monthName;
+}
+
+console.log(getCurrentDate())
 
 submitBtn.addEventListener("click", function () {
     getPassword()

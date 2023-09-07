@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kalam:wght@700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(234, 191, 248);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Kalam', cursive;
+    font-weight: bold;
+    color: rgb(0, 52, 52);
+    user-select: none;
+}
+
+.border-radius-controlls{
+    margin: 2rem 0 3rem;
+}
+
+#border-radius-value{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    margin-left: .5rem;
+}
+
+#box {
+    background-color: pink;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 0;
+    margin: 0 auto;
+}

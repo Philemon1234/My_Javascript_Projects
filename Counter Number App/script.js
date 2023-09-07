@@ -35,4 +35,3 @@ function resetNumber() {
     numberBtn.textContent = count
     changeColorDynamically()
 }
-
