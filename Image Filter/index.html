@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Filter</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Filterable Gallery</h2>
+
+        <div class="menu">
+            <a href="#" class="btn" data-filter="all">All</a>
+            <a href="#" class="btn" data-filter="animals">Animals</a>
+            <a href="#" class="btn" data-filter="bikes">Bikes</a>
+            <a href="#" class="btn" data-filter="cars">Cars</a>
+            <a href="#" class="btn" data-filter="mountains">Mountains</a>
+        </div>
+
+        <div class="box" id="store-items">
+            <div class="store-item animals">
+                <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YW5pbWFsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://plus.unsplash.com/premium_photo-1661869085660-3252fcd3e505?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmlrZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YW5pbWFsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1611429532458-f8bf8f6121fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmlrZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bW91bnRhaW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YW5pbWFsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1622185135505-2d795003994a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmlrZXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW91bnRhaW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1610100177133-cb4788574137?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGJpa2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2hhbGVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bW91bnRhaW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://images.unsplash.com/photo-1456926631375-92c8ce872def?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://plus.unsplash.com/premium_photo-1663013453313-e8c6a37fbffe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJpa2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG1vdW50YWluc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://images.unsplash.com/photo-1497752531616-c3afd9760a11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1551501419-cb31cdd588d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJhY2UlMjBjYXJzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1609174470568-ac0c96458a67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGJpa2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGNhcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/photo-1540390769625-2fc3f8b1d50c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fG1vdW50YWluc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+             <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1516045979272-f6a63895c198?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cmFjZSUyMGJpa2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://images.unsplash.com/photo-1470093851219-69951fcbb533?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1622185135825-d34b40aa03ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjJ8fGJpa2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGNhcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/photo-1543310465-875e89ce22f6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cml2ZXIlMjBtb3VudGFpbnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1525013066836-c6090f0ad9d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHJhY2UlMjBiaWtlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://plus.unsplash.com/premium_photo-1661963137333-731db8b9fb2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHJpdmVyJTIwbW91bnRhaW5zfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1619022412216-4f02215fb0cc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGJpa2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGNhcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fG1vdW50YWluc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://plus.unsplash.com/premium_photo-1668675744027-84e3618e9970?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1627062598433-016841c1f1e6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGJpa2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGNhcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/34/BA1yLjNnQCI1yisIZGEi_2013-07-16_1922_IMG_9873.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fG1vdW50YWluc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item animals">
+                <img src="https://plus.unsplash.com/premium_photo-1676479611869-9eb759c37749?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item bikes">
+                <img src="https://images.unsplash.com/photo-1628506854472-4158986d61c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGJpa2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item cars">
+                <img src="https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDd8fGNhcnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+
+            <div class="store-item mountains">
+                <img src="https://images.unsplash.com/photo-1469362102473-8622cfb973cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fG1vdW50YWluc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="store-img" alt="">
+            </div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
