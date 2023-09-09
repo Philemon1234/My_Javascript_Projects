@@ -72,10 +72,14 @@ body {
 
 .image-box{
     background-color: rgb(255, 255, 255);
+    min-height: 40vh;
+    width: 100%;
+    position: relative;
 }
 
 .image-box img{
     width: 100%;
+    object-fit: cover;
 }
 
 .content {
@@ -99,8 +103,12 @@ body {
     width: 100%;
     border: none;
     background-color: rgb(140, 2, 83);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.buy_btn a{
     color: #fff;
-    font-weight: 900;
-    cursor: pointer;
-    
+    text-decoration: none;
 }
