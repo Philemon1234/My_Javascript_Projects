@@ -51,7 +51,7 @@ body {
     background-color: maroon;
     display: block;
     width: 0%;
-    height: 101%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: -3rem;
@@ -64,26 +64,29 @@ body {
     width: 100%;
 }
 
+.error{
+    position: absolute;
+}
+
 .image-parent {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 1rem;
+    gap: 2rem;
+    margin-bottom: 5rem;
 }
 
 .image-box{
-    background-color: rgb(255, 255, 255);
-    min-height: 40vh;
-    width: 100%;
     position: relative;
+    /* background-color: orangered; */
 }
 
 .image-box img{
     width: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .content {
-    background-color: rgb(255, 255, 255);
     padding: .5rem;
 }
 
@@ -93,7 +96,6 @@ body {
 
 .product_price {
     margin: .7rem 0;
-    display: block;
     color: rgb(213, 75, 25, .6);
     font-weight: 900;
 }
@@ -103,12 +105,59 @@ body {
     width: 100%;
     border: none;
     background-color: rgb(140, 2, 83);
-    position: absolute;
-    bottom: 0;
-    left: 0;
 }
 
 .buy_btn a{
     color: #fff;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1838px) {
+    .btn {
+        margin-bottom: 1rem;
+    }
+
+    .image-parent {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .product_price {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .image-parent {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .nav {
+        width: 100%;
+    }
+    .btn {
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+    }
+
+    .image-parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav {
+        width: 100%;
+    }
+    .btn {
+        margin-bottom: 1rem;
+        width: 100%;
+        display: block;
+    }
+
+    .image-parent {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
