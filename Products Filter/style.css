@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #eeeeee;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3% auto;
+}
+
+.project-name {
+    font-size: 2.5rem;
+    color: rgb(221, 90, 112);
+    font-family: 'Kalam', cursive;
+}
+
+.nav {
+    margin: 2rem 0;
+}
+
+.btn {
+    padding: .7rem 3rem;
+    font-size: 1.1rem;
+    font-family: 'Kalam', cursive;
+    color: rgb(255, 255, 255);
+    background-color: #111111;
+    margin-right: 2rem;
+    border: 0;
+    border-radius: .2rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    background-color: maroon;
+    display: block;
+    width: 0%;
+    height: 101%;
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    z-index: -1;
+    transform: skewX(-50deg);
+    transition: .2s;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.image-parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+}
+
+.image-box{
+    background-color: rgb(255, 255, 255);
+}
+
+.image-box img{
+    width: 100%;
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+    padding: .5rem;
+}
+
+.product_description {
+    color: #777;
+}
+
+.product_price {
+    margin: .7rem 0;
+    display: block;
+    color: rgb(213, 75, 25, .6);
+    font-weight: 900;
+}
+
+.buy_btn {
+    padding: .4rem 0;
+    width: 100%;
+    border: none;
+    background-color: rgb(140, 2, 83);
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+    
+}
