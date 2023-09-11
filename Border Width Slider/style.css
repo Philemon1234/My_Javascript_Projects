@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;   
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#box {
+    margin-top: 5rem;
+    height: 15rem;
+    width: 15rem;
+    background-color: rgb(88, 33, 3);
+    border-width: 3px;
+    border-color: rgb(4, 114, 11);
+    border-style: dashed;
+    border-radius: 2px;
+
+}
