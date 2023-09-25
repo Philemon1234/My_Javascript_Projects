@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    color: #fff;
+}
+
+.select-title {
+    font-size: 30px;
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+
+#select {
+    width: 15rem;
+    padding: .5rem;
+    background-color: darkcyan;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: cursive;
+    outline: none;
+}
