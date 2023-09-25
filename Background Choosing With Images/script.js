@@ -7,6 +7,10 @@ function changeImage() {
 
     let selected = selectDropdown.value;
 
+    if (selected === "none") {
+        body.style.backgroundImage = "none";
+    }
+
     if (selected === "batman") {
         body.style.backgroundImage = "url('https://wallpapercave.com/dwp1x/vD2vB1p.jpg')"
     }
