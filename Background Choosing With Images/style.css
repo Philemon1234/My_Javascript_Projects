@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,6 +19,9 @@ body {
     flex-direction: column;
     height: 100%;
     color: #fff;
+    background-size: cover;
+    background-position: center;
+    transition: .2s;
 }
 
 .select-title {
@@ -31,6 +34,7 @@ body {
     width: 15rem;
     padding: .5rem;
     background-color: darkcyan;
+    border-bottom: 2px solid maroon;
     color: #fff;
     font-size: 1.2rem;
     font-family: cursive;
