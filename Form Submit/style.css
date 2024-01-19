@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #222;
+}
+
+
+/* Contact Page */
+.form_container {
+    margin: 20rem auto;
+    width: 25%;
+}
+
+.form_inputs {
+    width: 100%;
+}
+
+.form_inputs .form_el {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #3e3535;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    background-color: rgb(237, 238, 238);
+    border: .1rem solid rgb(204, 194, 204);
+}
+
+.form_btn {
+    background-color: maroon;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+.form_btn:hover {
+    background-color: orangered;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container img {
+    width: 2.5rem;
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

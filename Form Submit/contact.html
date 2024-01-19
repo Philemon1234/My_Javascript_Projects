@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="fav icon" href="./assets/Home-images/yufat-logo.png">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Submit</title>
+</head>
+
+<body>
+    <!-- -------------- Main ---------------- -->
+    <main>
+        <section class="contact_section">
+            <div class="contact_container">
+                <div class="form_container">
+                    <form onsubmit="sendEmail(); reset(); return false;">
+                        <div class="form_inputs">
+                            <input class="form_el" id="name" type="text" placeholder="Enter your Name" required>
+                            <input class="form_el" id="email" type="text" placeholder="Enter your Email" required>
+                            <div class="password-container" required>
+                                <input class="form_el password" id="password" type="password"
+                                    placeholder="Enter your Password" required>
+                                <img src="./eye-icons/eye-close.png" id="eye-icon" alt="">
+                            </div>
+                            <textarea class="form_el" id="textarea" cols="30" rows="10"
+                                placeholder="Enter your message..."></textarea>
+                            <button class="form_btn">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                secureToken: "c9dafe6f-cad5-4710-9639-f4d8b9df806f",
+                To: 'ntivuguruzwaphilemon0@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form",
+                Body: "Name: " + document.getElementById("name").value
+                    + "<br> Email: " + document.getElementById("email").value
+                    + "<br> Password: " + document.getElementById("password").value
+                    + "<br> Message: " + document.getElementById("textarea").value
+            }).then(
+                message => alert("Message sent")
+            );
+        }
+    </script>
+    <script src="password.js"></script>
+</body>
+
+</html>
